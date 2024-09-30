@@ -94,6 +94,9 @@ bool unpack(const std::string& path) {
     // add to index
     index.push_back(entry);
   }
+/* Old method, inconvenient on Windows for that end with .pfs.*:
+  if a foobar.pfs.000 file exists, the program will try making a folder names foobar.pfs, which isn't allowed.
+
 
   // get basepath for unpack
   filesystem::path pfspath(path);         // /foo/bar/foobar.pfs
@@ -101,6 +104,14 @@ bool unpack(const std::string& path) {
   pfspath = pfspath.parent_path();        // /foo/bar/
   filesystem::path new_fs_prefix =
       pfspath / stem / ""; // extract to /foo/bar/foobar/<VFS_PATH>
+
+*/
+
+/*New method, should be universal*/
+filesystem::path pfspath(path + "_unpacked"); // /foo/bar/foobar.pfs_unpacked
+filesystem::path new_fs_prefix =
+      pfspath / stem / ""; // extract to /foo/bar/foobar.pfs_unpacked/<VFS_PATH>
+
 #ifdef DEBUG
   cout << "FIles will oupput to: " << new_fs_prefix << endl;
 #endif // DEBUG
