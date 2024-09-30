@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/pfs_upk.dir/pfs_upk.cpp.o CMakeFiles/pfs_upk.dir/pack.cpp.o CMakeFiles/pfs_upk.dir/unpack.cpp.o CMakeFiles/pfs_upk.dir/xorcrypt.cpp.o CMakeFiles/pfs_upk.dir/sha1.c.o CMakeFiles/pfs_upk.dir/MemoryStream.cpp.o  -o pfs_upk  -lstdc++fs 
