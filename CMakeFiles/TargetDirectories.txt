@@ -1,0 +1,3 @@
+/mnt/c/Users/mambi/Jeux/PC/Tsui no Sora Remake/pfs_upk/pfs_upk/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/mambi/Jeux/PC/Tsui no Sora Remake/pfs_upk/pfs_upk/CMakeFiles/edit_cache.dir
+/mnt/c/Users/mambi/Jeux/PC/Tsui no Sora Remake/pfs_upk/pfs_upk/CMakeFiles/pfs_upk.dir

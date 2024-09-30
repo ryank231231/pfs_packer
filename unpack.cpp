@@ -110,7 +110,7 @@ bool unpack(const std::string& path) {
 /*New method, should be universal*/
 filesystem::path pfspath(path + "_unpacked"); // /foo/bar/foobar.pfs_unpacked
 filesystem::path new_fs_prefix =
-      pfspath / stem / ""; // extract to /foo/bar/foobar.pfs_unpacked/<VFS_PATH>
+      pfspath / ""; // extract to /foo/bar/foobar.pfs_unpacked/<VFS_PATH>
 
 #ifdef DEBUG
   cout << "FIles will oupput to: " << new_fs_prefix << endl;
